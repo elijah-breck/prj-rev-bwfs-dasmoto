@@ -1,0 +1,100 @@
+/*Global*/
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+/*Typography*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 100px;
+  color: khaki;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  color: white;
+}
+
+h1.hero {
+  top: 20px;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+}
+
+h2.brushes {
+  background-color: mediumspringgreen;
+}
+
+h2.frames {
+  background-color: lightcoral;
+}
+
+h2.paint {
+  background-color: skyblue;
+}
+
+
+span.price {
+  color: blue;
+  font-weight: bold;
+}
+
+
+
+/*Queries*/
+
+@media screen and (max-width: 700px) and (min-width: 200px) {
+    h1.hero {
+      font-size: 4em;
+    }
+}
+
+/*Divs*/
+
+.spacer {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  height: 5em;
+}
+
+.spacer-small {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  height: 2em;
+}
+
+ #hero {
+   position: relative;
+   background-image: url(../img/pattern.jpeg);
+   background-position: center;
+   background-clip: inherit;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 20em;
+   width: 100%;
+   margin: 0;
+   top: 0;
+   left: 0;
+ }
+
+ #supplies {
+   position: relative;
+   width: 80%;
+   left: 10%;
+   margin: 0;
+ }
